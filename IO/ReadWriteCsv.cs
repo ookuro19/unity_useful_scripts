@@ -29,9 +29,7 @@ public class ReadWriteCsv : SingletonCSharp<ReadWriteCsv> {
 		string line;
 		while((line = sr.ReadLine()) != null)
 		{
-
             m_ArrayData.Add(line.Split(';'));
-           
 		}
 		//关闭
 		sr.Close ();
